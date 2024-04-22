@@ -9,12 +9,18 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 
 # Inherit from garnet device
 $(call inherit-product, device/xiaomi/garnet/device.mk)
 
-PRODUCT_NAME := lineage_garnet
+CHERISH_MAINTAINER := ramshell688
+CHERISH_CHIPSET := SM7435
+CHERISH_BATTERY := 5100mAh
+CHERISH_DISPLAY := 1220x2712
+TARGET_BOOT_ANIMATION_RES := 1080
+
+PRODUCT_NAME := cherish_garnet
 PRODUCT_DEVICE := garnet
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
