@@ -17,12 +17,17 @@ $(call inherit-product, device/xiaomi/garnet/device.mk)
 # Inherit from the MiuiCamera setup
 $(call inherit-product-if-exists, device/xiaomi/miuicamera-garnet/device.mk)
 
+# Cherish props
 CHERISH_MAINTAINER := ramshell688
 CHERISH_CHIPSET := SM7435
 CHERISH_BATTERY := 5100mAh
 CHERISH_DISPLAY := 1220x2712
+
+# Cherish stuffs
+CHERISH_BUILD_TYPE := OFFICIAL
 EXTRA_UDFPS_ANIMATIONS := true
 TARGET_BOOT_ANIMATION_RES := 1080
+WITH_GMS := true
 
 PRODUCT_NAME := cherish_garnet
 PRODUCT_DEVICE := garnet
