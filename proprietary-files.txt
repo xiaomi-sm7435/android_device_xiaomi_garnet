@@ -76,6 +76,7 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio firmware
 vendor/firmware/aw882xx_acf.bin
+vendor/firmware/fs19xx.fsm
 
 # Audio graph manager
 vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service
@@ -112,6 +113,7 @@ vendor/lib64/libawcal.so
 vendor/lib64/libcapiv2svacnnvendor.so
 vendor/lib64/libcapiv2svarnnvendor.so
 vendor/lib64/libcapiv2uvvendor.so
+vendor/lib64/libfsalgocal.so
 vendor/lib64/libkaraokepal.so
 vendor/lib64/liblx-ar_util.so
 vendor/lib64/liblx-osal.so
